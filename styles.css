@@ -1,0 +1,139 @@
+@media only screen and (max-width : 320px) {
+    html {
+        font-size: 8px;
+    }
+
+    body::after {
+        background-position-x: -21em !important;
+    }
+}
+
+@media only screen and (min-width : 320px) {
+    html {
+        font-size: 10px;
+    }
+    
+    body::after {
+        background-position-x: -21em !important;
+    }
+}
+
+@media only screen and (min-width : 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    body::after {
+        background-position-x: -21em !important;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    html {
+        font-size: 16px;
+    }
+    
+    body::after {
+        background-position-x: -5em !important;
+    }
+}
+
+@media only screen and (min-width : 1400px) {
+    body::after {
+        background-position-x: 0 !important;
+    }
+}
+
+body::after {
+    content: "";
+    background: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2015/12/09112429/work-life-balance-working-from-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-color: rgba(3 18 66 / 50%);
+    background-blend-mode: overlay;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+#main {
+    max-width: 31.25em;
+    border-radius: .625em;
+    background-color: rgba(3 18 66 / 83%);
+    padding: 1.25em;
+    text-align: center;
+    font-family: monospace;
+    color: aliceblue;
+    margin: 0 auto;
+}
+
+input {
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 .625rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 0 0 .625em 0;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-form-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .9375em;
+    margin: .625rem;
+    padding: .625rem;
+    border-radius: .625rem;
+}
+
+.input-text {
+    width: 90%;
+}
+
+#dropdown {    
+    text-align: center;
+    box-sizing: content-box;
+    height: 1.875em;
+}
+
+
+.radio {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.degree {
+    font-size: 1.5rem;
+    display: block;
+}
+
+#submit {
+    color: lawngreen;
+    background-color: darkgreen;
+    height: 1.875em;
+    border: 0;
+}

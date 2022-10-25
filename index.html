@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = 'pl'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ankieta z danymi osobowymi">
+        <link rel="icon" href="Assets/IG.png">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Sebastian Kościak - Survey Form</title>
+    </head>
+    <body>
+        <main id = "main">
+            <h1 id = "title">Ankieta Personalna</h1>
+            <h3 id = "description">Prosimy o wprowadzenie swoich danych osobowych, zainteresowań oraz osiągnięć</h3>
+            <form id = "survey-form">
+                <div class = "survey-form-style">
+                    <label id = "name-label" for = "name"><h5>Imie</h5></label>
+                    <input class = "input-text" id = "name" name = "name" type = "text" placeholder="Wpisz swoje imie" required >
+                </div>
+                <div class = "survey-form-style">
+                    <label id = "surname-label" for = "surname"><h5>Nazwisko</h5></label>
+                    <input class = "input-text" id = "surname" name = "surname" type = "text" placeholder="Wpisz swoje nazwisko" required >
+                </div>
+                <div class = "survey-form-style">
+                    <label id = "age-label" for = "age"><h5>Wiek (opcjonalnie)</h5></label>
+                    <input class = "input-text" id = "age" name = "age" type = "number" min = "1" max = "120" placeholder="Wpisz swój wiek" >
+                </div>
+                <div class = "survey-form-style">
+                    <label id = "plec-label" for = "gender"><h5>Twoja płeć</h5></label>
+                    <select id = "dropdown" name = "gender">
+                        <option value = "men">Kobieta</option>
+                        <option value = "women">Mężczyzna</option>
+                        <option value = "gender-none">Żadne z powyższych</option>
+                    </select>
+                </div>
+                <div class = "survey-form-style">
+                        <h5>Twoja orientacja to:</h5>
+                        <label class = "radio"><input name = "sexual-orientation" value = "heterosexual" type = "radio">Heteroseksualna/ny</label>
+                        <label class = "radio"><input name = "sexual-orientation" value = "homosexual" type = "radio">Homoseksualna/ny</label>
+                        <label class = "radio"><input name = "sexual-orientation" value = "sexual-orientation-none" type = "radio">Żadne z powyższych</label>
+                </div>
+                <div class = "survey-form-style">
+                        <h5>Twoje wykształcenie to:</h5>
+                        <label class = "degree"><input name = "education-degree" value = "primary-education" type = "checkbox">Podstawowe</label>
+                        <label class = "degree"><input name = "education-degree" value = "vocational-education" type = "checkbox">Zawodowe</label>
+                        <label class = "degree"><input name = "education-degree" value = "secondary-education" type = "checkbox">Średnie</label>
+                        <label class = "degree"><input name = "education-degree" value = "higher-education" type = "checkbox">Wyższe</label>
+                </div>
+                <div class = "survey-form-style">
+                        <label id = "input-text" for = "input-text"><h5>Dodaj coś o sobie!</h5></label>
+                        <textarea class = "input-text" name = "input-text"  placeholder="Masz 150 znaków do wykorzystania"></textarea>
+                </div>
+                <button id = "submit" type = "submit">Kliknij mnie, aby zakończyć!</button>
+            </form>
+        </main>
+    </body>
+</html>
