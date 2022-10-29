@@ -60,6 +60,10 @@ body::after {
     z-index: -1;
 }
 
+#star {
+    font-size: .75em;
+}
+
 #main {
     max-width: 31.25em;
     border-radius: .625em;
@@ -90,9 +94,14 @@ h3 {
 }
 
 h5 {
+    display: flex;
     margin: 0;
     font-size: 1.5rem;
     padding: 0 0 .625em 0;
+}
+
+h5 p {
+    font-size: .75em;
 }
 
 #survey-form {

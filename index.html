@@ -23,25 +23,25 @@
                     <input class = "input-text" id = "surname" name = "surname" type = "text" placeholder="Wpisz swoje nazwisko" required >
                 </div>
                 <div class = "survey-form-style">
-                    <label id = "age-label" for = "age"><h5>Wiek (opcjonalnie)</h5></label>
+                    <label id = "age-label" for = "age"><h5>Wiek<p>*</p></h5></label>
                     <input class = "input-text" id = "age" name = "age" type = "number" min = "1" max = "120" placeholder="Wpisz swój wiek" >
                 </div>
                 <div class = "survey-form-style">
                     <label id = "plec-label" for = "gender"><h5>Twoja płeć</h5></label>
-                    <select id = "dropdown" name = "gender">
+                    <select id = "dropdown" name = "gender" required >
                         <option value = "men">Kobieta</option>
                         <option value = "women">Mężczyzna</option>
                         <option value = "gender-none">Żadne z powyższych</option>
                     </select>
                 </div>
                 <div class = "survey-form-style">
-                        <h5>Twoja orientacja to:</h5>
+                        <h5>Orientacja<p>*</p></h5>
                         <label class = "radio"><input name = "sexual-orientation" value = "heterosexual" type = "radio">Heteroseksualna/ny</label>
                         <label class = "radio"><input name = "sexual-orientation" value = "homosexual" type = "radio">Homoseksualna/ny</label>
                         <label class = "radio"><input name = "sexual-orientation" value = "sexual-orientation-none" type = "radio">Żadne z powyższych</label>
                 </div>
                 <div class = "survey-form-style">
-                        <h5>Twoje wykształcenie to:</h5>
+                        <h5>Wykształcenie<p>*</p></h5>
                         <label class = "degree"><input name = "education-degree" value = "primary-education" type = "checkbox">Podstawowe</label>
                         <label class = "degree"><input name = "education-degree" value = "vocational-education" type = "checkbox">Zawodowe</label>
                         <label class = "degree"><input name = "education-degree" value = "secondary-education" type = "checkbox">Średnie</label>
@@ -49,8 +49,9 @@
                 </div>
                 <div class = "survey-form-style">
                         <label id = "input-text" for = "input-text"><h5>Dodaj coś o sobie!</h5></label>
-                        <textarea class = "input-text" name = "input-text"  placeholder="Masz 150 znaków do wykorzystania"></textarea>
+                        <textarea class = "input-text" maxlength="150" name = "input-text"  placeholder="Masz 150 znaków do wykorzystania"></textarea>
                 </div>
+                <p id = 'star'>Pola oznaczone * nie są wymagane do wysłania formularza.</p>
                 <button id = "submit" type = "submit">Kliknij mnie, aby zakończyć!</button>
             </form>
         </main>
